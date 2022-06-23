@@ -2,12 +2,13 @@
   "name": "style.fanfou.dev",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,12 @@
   "dependencies": {
     "vitepress": "1.0.0-alpha.4",
     "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@umijs/fabric": "^2.12.0",
+    "husky": "^8.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^3.0.0",
+    "prettier-plugin-packagejson": "^2.2.18"
   }
 }
