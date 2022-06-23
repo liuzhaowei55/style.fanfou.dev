@@ -1,23 +1,25 @@
 {
   "name": "style.fanfou.dev",
   "version": "1.0.0",
-  "description": "",
   "private": true,
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "prepare": "husky install"
-  },
+  "description": "",
   "keywords": [],
-  "author": "",
   "license": "ISC",
+  "author": "",
+  "scripts": {
+    "docs:build": "vitepress build docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:serve": "vitepress serve docs",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
   "dependencies": {
     "vitepress": "1.0.0-alpha.4",
     "vue": "^3.2.37"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
     "@umijs/fabric": "^2.12.0",
     "husky": "^8.0.0",
     "prettier": "^2.7.1",
