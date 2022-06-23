@@ -1,6 +1,6 @@
 # commitlint
 
-* [commitlint homepae](https://commitlint.js.org/)
+- [commitlint homepage](https://commitlint.js.org/)
 
 ## 安装
 
@@ -32,4 +32,3 @@ EEE
 ```bash
 chmod a+x .husky/commit-msg
 ```
-
