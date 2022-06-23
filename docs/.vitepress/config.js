@@ -5,14 +5,14 @@ export default {
   logo: 'logo.png',
   themeConfig: {
     nav: [
-      { text: 'JavaScritp', link: '/js/' },
+      { text: 'JavaScript', link: '/js/' },
       { text: 'PHP', link: '/php/' },
       { text: 'Java', link: '/java/' },
     ],
     sidebar: {
       '/js/': [
         {
-          text: 'JavaScirpt',
+          text: 'JavaScript',
           items: [
             { text: 'husky', link: '/js/husky' },
             { text: 'commitlint', link: '/js/commitlint' },
