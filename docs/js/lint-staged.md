@@ -1,6 +1,6 @@
 # lint-staged
 
-* [github.com/okonet/lint-staged](https://github.com/okonet/lint-staged)
+- [github.com/okonet/lint-staged](https://github.com/okonet/lint-staged)
 
 ## 安装
 
@@ -13,7 +13,9 @@ yarn add lint-staged -D
 ```bash
 cat <<EEE > .lintstagedrc.json
 {
-  "*": "your-cmd"
+  "package.json": ["npx prettier --write"],
+  "*.{js,jsx,less,md,json}": ["prettier --write"],
+  "*.ts?(x)": ["prettier --parser=typescript --write"]
 }
 EEE
 ```
