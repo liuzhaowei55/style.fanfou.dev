@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-npm install --save-dev stylelint stylelint-config-standard stylelint-config-prettier
+npm install --save-dev stylelint @umijs/fabric
 ```
 
 配置
@@ -13,7 +13,7 @@ npm install --save-dev stylelint stylelint-config-standard stylelint-config-pret
 ```bash
 cat <<EEE > .stylelintrc.js
 module.exports = {
-  extends: ["stylelint-config-standard", "stylelint-config-prettier"],
+  extends: [require.resolve('@umijs/fabric/dist/stylelint')],
   rules: {
     // your rules
   },
