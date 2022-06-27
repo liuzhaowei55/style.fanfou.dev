@@ -37,6 +37,8 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/liuzhaowei55/style.fanfou.dev/tree/main',
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: true,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
