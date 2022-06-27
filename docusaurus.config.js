@@ -80,7 +80,7 @@ const config = {
       {
         hashed: true,
         indexBlog: false,
-        language: ['zh'],
+        language: ['en', 'zh'],
       },
     ],
   ],
