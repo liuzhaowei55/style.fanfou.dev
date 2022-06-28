@@ -4,6 +4,40 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const themeConfig =
+  /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+  ({
+    navbar: {
+      title: 'Code Style',
+      logo: {
+        alt: 'code Style logo',
+        src: 'img/logo.png',
+      },
+      items: [
+        {
+          type: 'doc',
+          docId: 'index',
+          position: 'left',
+          label: 'Guide',
+        },
+        {
+          href: 'https://github.com/liuzhaowei55/style.fanfou.dev',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+    algolia: {
+      appId: 'II6TTGG6PX',
+      apiKey: '0d1fe35cddef860904088dcf86a36685',
+      indexName: 'style',
+    },
+  });
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Code Style',
@@ -48,39 +82,7 @@ const config = {
     ],
   ],
 
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        title: 'Code Style',
-        logo: {
-          alt: 'code Style logo',
-          src: 'img/logo.png',
-        },
-        items: [
-          {
-            type: 'doc',
-            docId: 'index',
-            position: 'left',
-            label: 'Guide',
-          },
-          {
-            href: 'https://github.com/liuzhaowei55/style.fanfou.dev',
-            label: 'GitHub',
-            position: 'right',
-          },
-        ],
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
-      algolia: {
-        appId: 'II6TTGG6PX',
-        apiKey: '0d1fe35cddef860904088dcf86a36685',
-        indexName: 'style',
-      },
-    }),
+  themeConfig,
 };
 
 module.exports = config;
