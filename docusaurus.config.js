@@ -75,17 +75,12 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
-  themes: [
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        indexBlog: false,
-        language: ['en', 'zh'],
+      algolia: {
+        appId: 'II6TTGG6PX',
+        apiKey: '0d1fe35cddef860904088dcf86a36685',
+        indexName: 'style',
       },
-    ],
-  ],
+    }),
 };
 
 module.exports = config;
