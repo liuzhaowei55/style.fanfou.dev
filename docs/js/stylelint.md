@@ -4,7 +4,7 @@
 
 ## 安装
 
-```bash
+```bash npm2yarn
 npm install --save-dev stylelint @umijs/fabric
 ```
 

@@ -4,8 +4,8 @@
 
 ## 安装
 
-```bash
-yarn add -D @commitlint/config-conventional @commitlint/cli
+```bash npm2yarn
+npm install --save-dev @commitlint/config-conventional @commitlint/cli
 ```
 
 添加配置文件

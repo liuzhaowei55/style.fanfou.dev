@@ -4,8 +4,8 @@
 
 ## 安装
 
-```bash
-yarn add lint-staged -D
+```bash npm2yarn
+npm install --save-dev lint-staged
 ```
 
 配置

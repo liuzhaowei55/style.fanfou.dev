@@ -1,12 +1,12 @@
 # prettier
 
-* [Prettier Homepage](https://prettier.io/)
-* [umijs/fabric](https://github.com/umijs/fabric)
+- [Prettier Homepage](https://prettier.io/)
+- [umijs/fabric](https://github.com/umijs/fabric)
 
 ## 安装
 
-```bash
-yarn add prettier prettier-plugin-organize-imports prettier-plugin-packagejson @umijs/fabric -D
+```bash npm2yarn
+npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson @umijs/fabric
 ```
 
 创建配置文件
@@ -23,6 +23,7 @@ EEE
 ```
 
 创建 ignore 文件
+
 ```bash
 cat <<EEE > .prettierignore
 # Ignore artifacts:
