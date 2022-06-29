@@ -24,6 +24,11 @@ const sidebars = {
         'js/stylelint',
       ],
     },
+    {
+      type: 'category',
+      label: 'PHP',
+      items: ['php/php-cs-fixer'],
+    },
   ],
 };
 
