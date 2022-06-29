@@ -1,5 +1,7 @@
 # PHP CS Fixer
 
+- https://github.com/FriendsOfPHP/PHP-CS-Fixer
+
 ## 安装
 
 ```bash
@@ -36,3 +38,12 @@ return (new PhpCsFixer\Config())
 ```
 
 ## 使用
+
+```bash
+# 查看版本
+php-cs-fixer --version
+# 分析项目
+php-cs-fixer fix --dry-run
+# 修复问题
+php-cs-fixer fix . --rules=@Symfony --using-cache=no
+```
