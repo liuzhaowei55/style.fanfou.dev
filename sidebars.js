@@ -27,7 +27,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'PHP',
-      items: ['php/php-cs-fixer'],
+      items: ['php/php-cs-fixer', 'php/phpstan'],
     },
   ],
 };

@@ -32,9 +32,9 @@ return (new PhpCsFixer\Config())
 
 ```
 
-```diff title=".gitignore"
-+ # php cs fixer cache file
-+ .php-cs-fixer.cache
+```.ignore title=".gitignore"
+# php cs fixer cache file
+.php-cs-fixer.cache
 ```
 
 ## 使用
