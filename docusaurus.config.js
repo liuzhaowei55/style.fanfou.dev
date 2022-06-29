@@ -30,7 +30,7 @@ const themeConfig =
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
-      additionalLanguages: ['php', 'ignore'],
+      additionalLanguages: ['php', 'ignore', 'neon'],
     },
     algolia: {
       appId: 'II6TTGG6PX',
