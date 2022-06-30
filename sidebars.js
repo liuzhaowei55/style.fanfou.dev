@@ -16,11 +16,11 @@ const sidebars = {
       label: 'JavaScript',
       link: { type: 'doc', id: 'js/index' },
       items: [
-        'js/commitlint',
-        'js/eslint',
         'js/husky',
         'js/lint-staged',
+        'js/commitlint',
         'js/prettier',
+        'js/eslint',
         'js/stylelint',
       ],
     },
