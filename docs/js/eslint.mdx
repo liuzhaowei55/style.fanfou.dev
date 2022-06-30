@@ -7,23 +7,29 @@
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev eslint @umijs/fabric
+npm install --save-dev eslint @umijs/lint
 ```
 
-配置
+## 配置
+
+.eslintrc.js
 
 ```bash
 cat <<EEE > .eslintrc.js
-const fabric = require('@umijs/fabric');
-
 module.exports = {
-  extends: [require.resolve('@umijs/fabric/dist/eslint')],
+  extends: [require.resolve('@umijs/lint/dist/config/eslint')],
 
   rules: {
     // your rules
   },
 };
 EEE
+```
+
+.eslintignore
+
+```ignore title=".eslintignore"
+*.css
 ```
 
 ## 使用
