@@ -13,6 +13,16 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: 'Bash',
+      items: ['bash/shellcheck'],
+    },
+    {
+      type: 'category',
+      label: 'PHP',
+      items: ['php/php-cs-fixer', 'php/phpstan'],
+    },
+    {
+      type: 'category',
       label: 'JavaScript',
       link: { type: 'doc', id: 'js/index' },
       items: [
@@ -23,11 +33,6 @@ const sidebars = {
         'js/eslint',
         'js/stylelint',
       ],
-    },
-    {
-      type: 'category',
-      label: 'PHP',
-      items: ['php/php-cs-fixer', 'php/phpstan'],
     },
   ],
 };
