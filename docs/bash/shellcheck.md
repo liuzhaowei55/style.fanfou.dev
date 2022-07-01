@@ -3,6 +3,8 @@
 - https://www.shellcheck.net
 - https://github.com/koalaman/shellcheck
 
+## 安装
+
 ```mdx-code-block
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -19,3 +21,7 @@ brew install shellcheck
 </TabItem>
 </Tabs>
 ```
+
+## Editor plugins
+
+- VSCode：[ShellCheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck)
