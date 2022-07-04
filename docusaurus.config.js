@@ -27,6 +27,9 @@ const themeConfig =
         },
       ],
     },
+    footer: {
+      copyright: '我等采石之人，当心怀建造大教堂之愿景。',
+    },
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
