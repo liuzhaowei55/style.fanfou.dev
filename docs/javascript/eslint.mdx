@@ -3,11 +3,12 @@
 # ESLint
 
 - [ESLint Homepage](https://eslint.org/)
+- [AlloyTeam/eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)
 
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev eslint @umijs/lint
+npm install --save-dev eslint eslint-config-alloy
 ```
 
 ## 配置
@@ -17,7 +18,7 @@ npm install --save-dev eslint @umijs/lint
 ```bash
 cat <<EEE > .eslintrc.js
 module.exports = {
-  extends: [require.resolve('@umijs/lint/dist/config/eslint')],
+  extends: ['alloy', 'alloy/typescript'],
 
   rules: {
     // your rules
