@@ -1,11 +1,12 @@
 # Stylelint
 
 - [Stylelint Homepage](https://stylelint.io/)
+- [stylelint/stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)
 
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev stylelint @umijs/fabric
+npm install --save-dev stylelint stylelint-config-standard
 ```
 
 配置
@@ -13,7 +14,7 @@ npm install --save-dev stylelint @umijs/fabric
 ```bash
 cat <<EEE > .stylelintrc.js
 module.exports = {
-  extends: [require.resolve('@umijs/fabric/dist/stylelint')],
+  extends: ['stylelint-config-standard'],
   rules: {
     // your rules
   },
@@ -25,12 +26,12 @@ EEE
 
 ```json
 {
-  "*.{css}": ["npx stylelint"]
+  "*.{css}": ["stylelint"]
 }
 ```
 
 ## 使用
 
 ```bash
-npx stylelint "**/*.{css}"
+npx stylelint "src/**/*.{css}"
 ```
