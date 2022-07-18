@@ -1,5 +1,5 @@
 module.exports = {
-  extends: [require.resolve('@umijs/lint/dist/config/eslint')],
+  extends: ['alloy', 'alloy/typescript', 'alloy/react'],
 
   rules: {
     // your rules
