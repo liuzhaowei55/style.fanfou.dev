@@ -1,22 +1,20 @@
 # prettier
 
 - [Prettier Homepage](https://prettier.io/)
-- [umijs/fabric](https://github.com/umijs/fabric)
+- [AlloyTeam/eslint-config-alloy](https://github.com/AlloyTeam/eslint-config-alloy)
 
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson @umijs/fabric
+npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson eslint-config-alloy
 ```
 
 创建配置文件
 
 ```bash
 cat <<EEE > .prettierrc.js
-const fabric = require('@umijs/fabric');
-
 module.exports = {
-  ...fabric.prettier,
+  ...require('eslint-config-alloy/.prettierrc.js'),
   plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson'],
 };
 EEE
