@@ -11,20 +11,18 @@ npm install --save-dev stylelint stylelint-config-standard
 
 配置
 
-```bash
-cat <<EEE > .stylelintrc.js
+```js title='.stylelintrc.js'
 module.exports = {
   extends: ['stylelint-config-standard'],
   rules: {
     // your rules
   },
 };
-EEE
 ```
 
-.lintstagedrc.json 配置
+配置 lint-staged 自动格式化
 
-```json
+```json title='.lintstagedrc.json'
 {
   "*.{css}": ["stylelint"]
 }

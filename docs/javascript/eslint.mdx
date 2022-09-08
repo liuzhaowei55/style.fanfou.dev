@@ -11,8 +11,7 @@ npm install --save-dev eslint eslint-config-alloy
 
 ## 配置
 
-```bash title=".eslintrc.js"
-cat <<EEE > .eslintrc.js
+```js title=".eslintrc.js"
 module.exports = {
   extends: ['alloy', 'alloy/typescript'],
 
@@ -20,7 +19,6 @@ module.exports = {
     // your rules
   },
 };
-EEE
 ```
 
 ```ignore title=".eslintignore"
