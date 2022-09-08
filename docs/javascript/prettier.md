@@ -11,22 +11,18 @@ npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin
 
 创建配置文件
 
-```bash
-cat <<EEE > .prettierrc.js
+```js title='.prettierrc.js'
 module.exports = {
   ...require('eslint-config-alloy/.prettierrc.js'),
   plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson'],
 };
-EEE
 ```
 
 创建 ignore 文件
 
-```bash
-cat <<EEE > .prettierignore
+```ignore title='.prettierignore'
 # Ignore artifacts:
 build
 coverage
 *.html
-EEE
 ```
