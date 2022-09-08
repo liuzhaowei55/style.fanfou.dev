@@ -14,21 +14,8 @@ npm install --save-dev @commitlint/config-conventional @commitlint/cli
 echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > .commitlintrc.js
 ```
 
-添加 husky hooks
-
-## 设置 hooks
+设置 husky hooks
 
 ```bash
-cat <<EEE > .husky/commit-msg
-#!/bin/sh
-. "\$(dirname "\$0")/_/husky.sh"
-
-npx --no -- commitlint --edit "\${1}"
-EEE
-```
-
-添加文件执行权限
-
-```bash
-chmod a+x .husky/commit-msg
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'
 ```
