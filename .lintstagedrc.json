@@ -1,7 +1,7 @@
 {
   "package.json": ["prettier --write"],
   "*.{js,jsx,json}": ["prettier --write"],
-  "*.{less}": ["prettier --write"],
+  "*.less": ["prettier --write"],
   "*.ts?(x)": ["prettier --parser=typescript --write"],
   "*.md?(x)": ["prettier --parser=markdown --write"]
 }
