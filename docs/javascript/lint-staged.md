@@ -10,14 +10,12 @@ npm install --save-dev lint-staged
 
 配置
 
-```bash
-cat <<EEE > .lintstagedrc.json
+```bash title='.lintstagedrc.json'
 {
   "package.json": ["npx prettier --write"],
   "*.{js,jsx,less,md,json}": ["prettier --write"],
   "*.ts?(x)": ["prettier --parser=typescript --write"]
 }
-EEE
 ```
 
 ```bash
