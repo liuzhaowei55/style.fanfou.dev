@@ -1,5 +1,10 @@
 // @ts-check
 
+/**
+ * 侧边栏配置文档
+ * https://docusaurus.io/zh-CN/docs/sidebar/items
+ */
+
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docs: [
@@ -18,7 +23,15 @@ const sidebars = {
     {
       type: 'category',
       label: 'PHP',
-      items: ['php/php-cs-fixer', 'php/phpstan'],
+      items: [
+        'php/php-cs-fixer',
+        'php/phpstan',
+        {
+          type: 'category',
+          label: 'Laravel',
+          items: ['php/laravel/pint'],
+        },
+      ],
     },
     {
       type: 'category',
