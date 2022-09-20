@@ -16,13 +16,17 @@ npm install husky --save-dev
 ## 设置 prepare
 
 ```bash
-npm set-script prepare "husky install"
-npm run prepare
+npm set-script prepare "husky install" && npm run prepare
 ```
 
 ## 设置 hooks
 
-```bash
+```shell
 npx husky add .husky/pre-commit "npm test"
+```
+
+## 提交 .husky 文件变化
+
+```shell
 git add .husky/pre-commit
 ```

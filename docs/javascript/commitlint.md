@@ -10,8 +10,10 @@ npm install --save-dev @commitlint/config-conventional @commitlint/cli
 
 添加配置文件
 
-```bash
-echo "module.exports = { extends: ['@commitlint/config-conventional'] };" > .commitlintrc.js
+```js title='.commitlintrc.js'
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
+};
 ```
 
 设置 husky hooks
