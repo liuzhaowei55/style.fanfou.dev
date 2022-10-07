@@ -5,53 +5,9 @@
 
 ## 安装
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-<Tabs>
-<TabItem value="build-in" label="默认规则" default>
-
 ```bash npm2yarn
-npm install --save-dev eslint @babel/core @babel/eslint-parser eslint-config-alloy
+npm install --save-dev eslint eslint-config-alloy
 ```
-
-</TabItem>
-<TabItem value="react" label="React">
-
-```bash npm2yarn
-npm install --save-dev eslint @babel/core @babel/eslint-parser @babel/preset-react@latest eslint-plugin-react eslint-config-alloy
-```
-
-</TabItem>
-<TabItem value="vue" label="Vue">
-
-```bash npm2yarn
-npm install --save-dev eslint @babel/core @babel/eslint-parser vue-eslint-parser eslint-plugin-vue eslint-config-alloy
-```
-
-</TabItem>
-<TabItem value="typescript" label="TypeScript">
-
-```bash npm2yarn
-npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-alloy
-```
-
-</TabItem>
-<TabItem value="typescript-react" label="TypeScript & React">
-
-```bash npm2yarn
-npm install --save-dev eslint typescript @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-react eslint-config-alloy
-```
-
-</TabItem>
-<TabItem value="typescript-vue" label="TypeScript & Vue">
-
-```bash npm2yarn
-npm install --save-dev @babel/core @babel/eslint-parser @typescript-eslint/eslint-plugin @typescript-eslint/parser @vue/eslint-config-typescript eslint eslint-config-alloy eslint-plugin-vue vue-eslint-parser
-```
-
-</TabItem>
-</Tabs>
 
 ## 配置
 
@@ -84,6 +40,6 @@ module.exports = {
 
 ## 使用
 
-```bash
-eslint "src/**"
+```shell
+npx eslint "src/**"
 ```
