@@ -1,5 +1,3 @@
-// @ts-check
-
 /**
  * 侧边栏配置文档
  * https://docusaurus.io/zh-CN/docs/sidebar/items
@@ -14,24 +12,6 @@ const sidebars = {
       label: 'Basic',
       link: { type: 'doc', id: 'basic/index' },
       items: ['basic/editorconfig'],
-    },
-    {
-      type: 'category',
-      label: 'Bash',
-      items: ['bash/shellcheck'],
-    },
-    {
-      type: 'category',
-      label: 'PHP',
-      items: [
-        'php/php-cs-fixer',
-        'php/phpstan',
-        {
-          type: 'category',
-          label: 'Laravel',
-          items: ['php/laravel/pint'],
-        },
-      ],
     },
     {
       type: 'category',
@@ -50,6 +30,24 @@ const sidebars = {
         'javascript/eslint',
         'javascript/stylelint',
       ],
+    },
+    {
+      type: 'category',
+      label: 'PHP',
+      items: [
+        'php/php-cs-fixer',
+        'php/phpstan',
+        {
+          type: 'category',
+          label: 'Laravel',
+          items: ['php/laravel/pint'],
+        },
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Shell',
+      items: ['shell/shellcheck'],
     },
   ],
 };
