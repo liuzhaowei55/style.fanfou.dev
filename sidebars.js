@@ -16,7 +16,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Java',
-      items: ['java/google-java-style-guide', 'java/checkstyle', 'java/google-java-format'],
+      items: ['java/checkstyle', 'java/google-java-format', 'java/spotless'],
     },
     {
       type: 'category',
