@@ -2,7 +2,6 @@
 
 - [github.com/diffplug/spotless](https://github.com/diffplug/spotless)
 - [Andorid AOSP Java 代码样式指南](https://source.android.com/docs/setup/contribute/code-style?hl=zh-cn)
-- [plugin/com.diffplug.spotless](https://plugins.gradle.org/plugin/com.diffplug.spotless)
 
 ## Gradle
 
@@ -11,13 +10,17 @@
 ```groovy title="build.gradle"
 // 添加 plugin
 plugins {
+    // https://plugins.gradle.org/plugin/com.diffplug.spotless
     id "com.diffplug.spotless" version "6.11.0"
 }
 
 // 配置
 spotless {
     java {
+        importOrder()
+		removeUnusedImports()
         googleJavaFormat('1.15.0').aosp().reflowLongStrings()
+        formatAnnotations()
     }
 }
 ```
