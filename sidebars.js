@@ -11,7 +11,7 @@ const sidebars = {
       type: 'category',
       label: 'Basic',
       link: { type: 'doc', id: 'basic/index' },
-      items: ['basic/editorconfig'],
+      items: ['basic/editorconfig', 'basic/sonarqube'],
     },
     {
       type: 'category',
