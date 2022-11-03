@@ -4,8 +4,7 @@
 
 ## 配置
 
-```bash
-cat <<EEE > .editorconfig
+```ini title=".editorconfig"
 # EditorConfig is awesome: https://EditorConfig.org
 
 # top-most EditorConfig file
@@ -39,5 +38,4 @@ indent_size = 2
 [{package.json,.travis.yml}]
 indent_style = space
 indent_size = 2
-EEE
 ```
