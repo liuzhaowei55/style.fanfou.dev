@@ -1,4 +1,4 @@
-# Spotless
+# Spotless 👍
 
 - [github.com/diffplug/spotless](https://github.com/diffplug/spotless)
 - [Andorid AOSP Java 代码样式指南](https://source.android.com/docs/setup/contribute/code-style?hl=zh-cn)
