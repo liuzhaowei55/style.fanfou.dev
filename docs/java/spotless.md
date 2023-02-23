@@ -7,36 +7,33 @@
 
 ### 安装配置
 
+```groovy title="settings.gradle"
+// Sharing dependency versions between projects
+// https://docs.gradle.org/current/userguide/platforms.html
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            // https://plugins.gradle.org/plugin/com.diffplug.spotless
+            plugin("spotless", "com.diffplug.spotless").version("6.14.0")
+        }
+    }
+}
+```
+
 ```groovy title="build.gradle"
 // 添加 plugin
 plugins {
     id 'java'
     id 'groovy'
-    // https://plugins.gradle.org/plugin/com.diffplug.spotless
-    id "com.diffplug.spotless" version "6.12.0"
+    
+    alias(libs.plugins.spotless)
 }
 
-// 配置
-spotless {
-    java {
-        importOrder()
-		removeUnusedImports()
-        googleJavaFormat('1.15.0').aosp().reflowLongStrings()
-        formatAnnotations()
-    }
-    groovy {
-        target '**/*.groovy'
-        importOrder()
-        indentWithSpaces()
-        endWithNewline()
-        trimTrailingWhitespace()
-        greclipse('4.6.3').configFile("config/spotless/greclipse.properties")
-    }
-    groovyGradle {
-        target '**/*.gradle'
-        greclipse('4.6.3').configFile("config/spotless/greclipse.properties")
-    }
-}
+apply from: rootProject.file('config/spotless/spotless-dotfiles.gradle')
+apply from: rootProject.file('config/spotless/spotless-gradle.gradle')
+apply from: rootProject.file('config/spotless/spotless-groovy.gradle')
+apply from: rootProject.file('config/spotless/spotless-java.gradle')
+
 ```
 
 ```ini title="config/spotless/greclipse.properties"
@@ -81,6 +78,59 @@ groovy.formatter.braces.end=next
 # 删除不必要的分号
 # The default value is 'false'.
 groovy.formatter.remove.unnecessary.semicolons=true
+
+```
+
+```groovy title="config/spotless/spotless-dotfiles.gradle"
+// 配置
+spotless {
+    format 'dotfiles', {
+        target '.gitignore', '.gitattributes', '.editorconfig'
+        indentWithSpaces(2)
+        trimTrailingWhitespace()
+        endWithNewline()
+    }
+}
+
+```
+
+```groovy title="config/spotless/spotless-gradle.gradle"
+// 配置
+spotless {
+    groovyGradle {
+        target '**/*.gradle'
+        greclipse('4.6.3').configFile rootProject.files("config/spotless/greclipse.properties")
+    }
+}
+
+```
+
+```groovy title="config/spotless/spotless-groovy.gradle"
+// 配置
+spotless {
+    groovy {
+        target '**/*.groovy'
+        importOrder()
+        indentWithSpaces()
+        endWithNewline()
+        trimTrailingWhitespace()
+        greclipse('4.6.3').configFile rootProject.file("config/spotless/greclipse.properties")
+    }
+}
+
+```
+
+```groovy title="config/spotless/spotless-java.gradle"
+// 配置
+spotless {
+    java {
+        importOrder()
+        removeUnusedImports()
+        googleJavaFormat('1.15.0').aosp().reflowLongStrings()
+        formatAnnotations()
+    }
+}
+
 ```
 
 ### 命令行使用
