@@ -16,7 +16,7 @@ npm install husky --save-dev
 ## 设置 prepare
 
 ```bash
-npm set-script prepare "husky install" && npm run prepare
+npm pkg set scripts.prepare="husky install" && npm run prepare
 ```
 
 ## 设置 hooks
