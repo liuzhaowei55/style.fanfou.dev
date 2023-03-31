@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     versionCatalogs {
         libs {
             // https://plugins.gradle.org/plugin/com.diffplug.spotless
-            plugin("spotless", "com.diffplug.spotless").version("6.14.0")
+            plugin("spotless", "com.diffplug.spotless").version("6.17.0")
         }
     }
 }
@@ -99,7 +99,7 @@ spotless {
 spotless {
     groovyGradle {
         target '**/*.gradle'
-        greclipse('4.6.3').configFile rootProject.files("config/spotless/greclipse.properties")
+        greclipse().configFile rootProject.files("config/spotless/greclipse.properties")
     }
 }
 
@@ -114,7 +114,7 @@ spotless {
         indentWithSpaces()
         endWithNewline()
         trimTrailingWhitespace()
-        greclipse('4.6.3').configFile rootProject.file("config/spotless/greclipse.properties")
+        greclipse().configFile rootProject.file("config/spotless/greclipse.properties")
     }
 }
 
