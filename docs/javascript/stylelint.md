@@ -9,6 +9,11 @@
 npm install --save-dev stylelint stylelint-config-standard
 ```
 
+```bash
+npm pkg set scripts.stylelint="stylelint src/**/*.css"
+npm pkg set scripts.stylelint:fix="stylelint --fix src/**/*.css"
+```
+
 配置
 
 ```js title='.stylelintrc.js'
