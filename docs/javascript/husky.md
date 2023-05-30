@@ -10,7 +10,7 @@ description: husky
 ## 安装
 
 ```bash npm2yarn
-npm install husky --save-dev
+npm install --save-dev husky
 ```
 
 ## 设置 prepare

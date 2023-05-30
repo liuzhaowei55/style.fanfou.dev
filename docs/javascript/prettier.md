@@ -9,6 +9,11 @@
 npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson eslint-config-alloy
 ```
 
+```bash
+npm pkg set scripts.prettier="prettier --ignore-unknown src"
+npm pkg set scripts.prettier:fix="prettier -write --ignore-unknown src"
+```
+
 创建配置文件
 
 ```js title='.prettierrc.js'
