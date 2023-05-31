@@ -6,7 +6,7 @@
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev eslint eslint-config-alloy
+npm install --save-dev eslint eslint-config-alloy eslint-plugin-react @typescript-eslint/eslint-plugin @typescript-eslint/parser
 ```
 
 ```bash

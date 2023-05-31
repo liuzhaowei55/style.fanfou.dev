@@ -4,4 +4,9 @@ module.exports = {
   rules: {
     // your rules
   },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
