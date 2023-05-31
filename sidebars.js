@@ -50,6 +50,14 @@ const sidebars = {
       items: ['shell/shellcheck'],
     },
   ],
+  framework: [
+    { type: 'doc', id: 'framework/index' },
+    {
+      type: 'category',
+      label: 'NextJS',
+      items: ['framework/nextjs/index'],
+    },
+  ],
 };
 
 module.exports = sidebars;

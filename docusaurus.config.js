@@ -21,6 +21,12 @@ const themeConfig =
           label: 'Guide',
         },
         {
+          type: 'doc',
+          docId: 'framework/index',
+          position: 'left',
+          label: 'Framework',
+        },
+        {
           href: 'https://github.com/liuzhaowei55/style.fanfou.dev',
           label: 'GitHub',
           position: 'right',
