@@ -55,7 +55,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'NextJS',
-      items: ['framework/nextjs/index'],
+      items: ['framework/nextjs/index', 'framework/nextjs/eslint', 'framework/nextjs/prettier'],
     },
   ],
 };
