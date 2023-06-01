@@ -20,7 +20,7 @@ npm pkg set scripts.stylelint:fix="stylelint --fix src/**/*.css"
 module.exports = {
   extends: ['stylelint-config-standard'],
   rules: {
-    // your rules
+    'no-empty-source': null,
   },
 };
 ```
@@ -29,7 +29,7 @@ module.exports = {
 
 ```json title='.lintstagedrc.json'
 {
-  "*.{css}": ["stylelint"]
+  "*.css": ["stylelint --fix"]
 }
 ```
 

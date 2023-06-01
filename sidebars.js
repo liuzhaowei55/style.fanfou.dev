@@ -59,6 +59,7 @@ const sidebars = {
         'framework/nextjs/index',
         'framework/nextjs/eslint',
         'framework/nextjs/prettier',
+        'javascript/stylelint',
         'framework/nextjs/husky',
         'framework/nextjs/lint-staged',
         'javascript/commitlint',
