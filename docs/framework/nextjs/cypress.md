@@ -13,4 +13,26 @@ npm install --save-dev cypress
 
 ```bash
 npm pkg set scripts.cypress="cypress open"
+npm pkg set scripts.cypress:component="cypress run --component --config video=false"
+npm pkg set scripts.cypress:e2e="cypress run --e2e --config video=false"
+```
+
+```json title="cypress/tsconfig.json"
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts"]
+}
+```
+
+添加 .gitignore 忽略文件
+
+```ignore title=".gitignore"
+# Cypress
+cypress/downloads
+cypress/screenshots
+cypress/videos
 ```
