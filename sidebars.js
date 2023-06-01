@@ -63,6 +63,7 @@ const sidebars = {
         'framework/nextjs/husky',
         'framework/nextjs/lint-staged',
         'javascript/commitlint',
+        'framework/nextjs/cypress',
       ],
     },
   ],
