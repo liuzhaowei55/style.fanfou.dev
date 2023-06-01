@@ -61,6 +61,7 @@ const sidebars = {
         'framework/nextjs/prettier',
         'framework/nextjs/husky',
         'framework/nextjs/lint-staged',
+        'javascript/commitlint',
       ],
     },
   ],
