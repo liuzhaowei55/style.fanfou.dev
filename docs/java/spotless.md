@@ -25,7 +25,7 @@ dependencyResolutionManagement {
 plugins {
     id 'java'
     id 'groovy'
-    
+
     alias(libs.plugins.spotless)
 }
 
@@ -124,9 +124,10 @@ spotless {
 // 配置
 spotless {
     java {
+        toggleOffOn('@formatter:off', '@formatter:on')
         importOrder()
         removeUnusedImports()
-        googleJavaFormat('1.15.0').aosp().reflowLongStrings()
+        googleJavaFormat('1.17.0').aosp().reflowLongStrings()
         formatAnnotations()
     }
 }
