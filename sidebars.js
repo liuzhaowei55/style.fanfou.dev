@@ -16,7 +16,13 @@ const sidebars = {
     {
       type: 'category',
       label: 'Java',
-      items: ['java/alibaba-p3c', 'java/checkstyle', 'java/google-java-format', 'java/spotless'],
+      items: [
+        'java/alibaba-p3c',
+        'java/checkstyle',
+        'java/google-java-format',
+        'java/spotless',
+        'java/spring-javaformat',
+      ],
     },
     {
       type: 'category',
