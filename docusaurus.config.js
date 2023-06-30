@@ -1,8 +1,6 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const { themes } = require('prism-react-renderer');
 
 const themeConfig =
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -37,14 +35,19 @@ const themeConfig =
       copyright: '我等采石之人，当心怀建造大教堂之愿景。',
     },
     prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      theme: themes.github,
+      darkTheme: themes.dracula,
       additionalLanguages: ['php', 'ignore', 'neon', 'groovy', 'ini'],
     },
     algolia: {
       appId: 'II6TTGG6PX',
       apiKey: '0d1fe35cddef860904088dcf86a36685',
       indexName: 'style',
+    },
+    docs: {
+      sidebar: {
+        autoCollapseCategories: true,
+      },
     },
   });
 
