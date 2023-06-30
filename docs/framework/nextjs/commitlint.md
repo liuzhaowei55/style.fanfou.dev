@@ -1,0 +1,3 @@
+import Commitlint from '../../javascript/commitlint.md'
+
+<Commitlint />
