@@ -40,15 +40,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'PHP',
-      items: [
-        'php/php-cs-fixer',
-        'php/phpstan',
-        {
-          type: 'category',
-          label: 'Laravel',
-          items: ['php/laravel/pint'],
-        },
-      ],
+      items: ['php/php-cs-fixer', 'php/phpstan'],
     },
     {
       type: 'category',
@@ -71,6 +63,11 @@ const sidebars = {
         'framework/nextjs/commitlint',
         'framework/nextjs/cypress',
       ],
+    },
+    {
+      type: 'category',
+      label: 'Laravel',
+      items: ['framework/laravel/pint'],
     },
   ],
 };
