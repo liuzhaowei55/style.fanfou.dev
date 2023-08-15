@@ -28,9 +28,9 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "0.0.0-5618",
-    "@docusaurus/preset-classic": "0.0.0-5618",
-    "@docusaurus/remark-plugin-npm2yarn": "0.0.0-5618",
+    "@docusaurus/core": "0.0.0-5645",
+    "@docusaurus/preset-classic": "0.0.0-5645",
+    "@docusaurus/remark-plugin-npm2yarn": "0.0.0-5645",
     "@mdx-js/react": "2.3.0",
     "clsx": "^1.2.1",
     "prism-react-renderer": "2.0.6",
@@ -42,7 +42,7 @@
     "@babel/preset-react": "7.22.5",
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
-    "@docusaurus/module-type-aliases": "0.0.0-5618",
+    "@docusaurus/module-type-aliases": "0.0.0-5645",
     "@tsconfig/docusaurus": "2.0.0",
     "@typescript-eslint/eslint-plugin": "5.60.1",
     "@typescript-eslint/parser": "5.60.1",
