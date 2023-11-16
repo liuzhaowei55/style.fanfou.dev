@@ -1,10 +1,6 @@
-/**
- * 侧边栏配置文档
- * https://docusaurus.io/zh-CN/docs/sidebar/items
- */
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
 
-/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
-const sidebars = {
+const sidebars: SidebarsConfig = {
   docs: [
     { type: 'doc', id: 'index' },
     {
@@ -72,4 +68,4 @@ const sidebars = {
   ],
 };
 
-module.exports = sidebars;
+export default sidebars;

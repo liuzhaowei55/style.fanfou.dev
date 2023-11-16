@@ -22,27 +22,29 @@
       "not op_mini all"
     ],
     "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "0.0.0-5666",
-    "@docusaurus/preset-classic": "0.0.0-5666",
-    "@docusaurus/remark-plugin-npm2yarn": "0.0.0-5666",
-    "@mdx-js/react": "2.3.0",
+    "@docusaurus/core": "3.0.0",
+    "@docusaurus/preset-classic": "3.0.0",
+    "@docusaurus/remark-plugin-npm2yarn": "3.0.0",
+    "@mdx-js/react": "^3.0.0",
     "clsx": "^1.2.1",
-    "prism-react-renderer": "2.0.6",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "prism-react-renderer": "^2.1.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.22.5",
     "@babel/preset-react": "7.22.5",
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
-    "@docusaurus/module-type-aliases": "0.0.0-5666",
+    "@docusaurus/module-type-aliases": "3.0.0",
+    "@docusaurus/tsconfig": "3.0.0",
+    "@docusaurus/types": "3.0.0",
     "@tsconfig/docusaurus": "2.0.0",
     "@typescript-eslint/eslint-plugin": "5.60.1",
     "@typescript-eslint/parser": "5.60.1",
@@ -54,6 +56,9 @@
     "prettier": "2.8.8",
     "prettier-plugin-organize-imports": "3.2.2",
     "prettier-plugin-packagejson": "2.4.3",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
+  },
+  "engines": {
+    "node": ">=18.0"
   }
 }
