@@ -10,8 +10,8 @@ npm install --save-dev @commitlint/cli @commitlint/config-conventional
 
 添加配置文件
 
-```js title='.commitlintrc.js'
-module.exports = {
+```js title='commitlint.config.js'
+export default {
   extends: ['@commitlint/config-conventional'],
 };
 ```

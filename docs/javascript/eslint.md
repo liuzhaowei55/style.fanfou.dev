@@ -16,7 +16,7 @@ npm pkg set scripts.eslint:fix="eslint --fix src"
 
 ## 配置
 
-```js title=".eslintrc.js"
+```js title=".eslintrc.cjs"
 module.exports = {
   extends: ['alloy', 'alloy/typescript'],
   env: {

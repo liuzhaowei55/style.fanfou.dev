@@ -6,7 +6,7 @@
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson eslint-config-alloy
+npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson prettier-plugin-tailwindcss eslint-config-alloy
 ```
 
 ```bash
@@ -16,10 +16,13 @@ npm pkg set scripts.prettier:fix="prettier -write --ignore-unknown src"
 
 创建配置文件
 
-```js title='.prettierrc.js'
-module.exports = {
-  ...require('eslint-config-alloy/.prettierrc.js'),
-  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson'],
+```js title='prettier.config.js'
+import alloy from 'eslint-config-alloy/.prettierrc.js';
+
+/** @type {import("prettier").Config} */
+export default {
+  alloy,
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson', 'prettier-plugin-tailwindcss'],
 };
 ```
 

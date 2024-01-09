@@ -16,10 +16,18 @@ npm pkg set scripts.stylelint:fix="stylelint --fix src/**/*.css"
 
 配置
 
-```js title='.stylelintrc.js'
-module.exports = {
+```js title='stylelint.config.js'
+/** @type {import('stylelint').Config} */
+export default {
   extends: ['stylelint-config-standard'],
   rules: {
+    'block-no-empty': true,
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+      },
+    ],
     'no-empty-source': null,
   },
 };
