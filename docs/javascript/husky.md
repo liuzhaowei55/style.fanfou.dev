@@ -13,16 +13,16 @@ description: husky
 npm install --save-dev husky
 ```
 
-## 设置 prepare
+## 初始化
 
 ```bash
-npm pkg set scripts.prepare="husky install" && npm run prepare
+npx husky init
 ```
 
 ## 设置 hooks
 
 ```shell
-npx husky add .husky/pre-commit "npm test"
+echo "npm test" > .husky/pre-commit
 ```
 
 ## 提交 .husky 文件变化
