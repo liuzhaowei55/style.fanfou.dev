@@ -46,6 +46,7 @@ const sidebars: SidebarsConfig = {
   ],
   framework: [
     { type: 'doc', id: 'framework/index' },
+    { type: 'category', label: 'Vite + React + TypeScript', items: ['framework/vite-react-ts/testing-vitest'] },
     {
       type: 'category',
       label: 'NextJS',
