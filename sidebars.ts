@@ -49,7 +49,11 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       label: 'Vite + React + TypeScript',
-      items: ['framework/vite-react-ts/testing-vitest', 'framework/vite-react-ts/router-react-router'],
+      items: [
+        'framework/vite-react-ts/testing-vitest',
+        'framework/vite-react-ts/router-react-router',
+        'framework/vite-react-ts/router-tanstack-router',
+      ],
     },
     {
       type: 'category',
