@@ -20,5 +20,8 @@ npm install --save-dev lint-staged
 
 ```bash
 npm pkg set scripts.lint-staged="lint-staged"
-npx husky add .husky/pre-commit 'npx --no-install lint-staged'
+```
+
+```bash
+echo "npx --no-install lint-staged" >> .husky/pre-commit
 ```

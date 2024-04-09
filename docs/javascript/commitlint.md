@@ -19,5 +19,5 @@ export default {
 设置 husky hooks
 
 ```bash
-npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'
+echo "npx --no -- commitlint --edit ${1}" >> .husky/commit-msg
 ```
