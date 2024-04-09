@@ -46,7 +46,11 @@ const sidebars: SidebarsConfig = {
   ],
   framework: [
     { type: 'doc', id: 'framework/index' },
-    { type: 'category', label: 'Vite + React + TypeScript', items: ['framework/vite-react-ts/testing-vitest'] },
+    {
+      type: 'category',
+      label: 'Vite + React + TypeScript',
+      items: ['framework/vite-react-ts/testing-vitest', 'framework/vite-react-ts/router-react-router'],
+    },
     {
       type: 'category',
       label: 'NextJS',
