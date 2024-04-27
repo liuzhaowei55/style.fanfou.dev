@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkstyle_fanfou_dev=self.webpackChunkstyle_fanfou_dev||[]).push([[3237],{9754:(e,s,f)=>{f.r(s),f.d(s,{default:()=>a});var t=f(6550),u=(f(7294),f(5893));const a=()=>(0,u.jsx)(t.l_,{to:"/docs"})}}]);
