@@ -15,7 +15,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "io.spring.javaformat:spring-javaformat-gradle-plugin:0.0.39"
+        classpath "io.spring.javaformat:spring-javaformat-gradle-plugin:0.0.41"
     }
 }
 
@@ -36,7 +36,7 @@ allprojects {
     apply plugin: 'io.spring.javaformat'
 
     dependencies {
-        checkstyle("io.spring.javaformat:spring-javaformat-checkstyle:0.0.39")
+        checkstyle("io.spring.javaformat:spring-javaformat-checkstyle:0.0.41")
     }
 }
 
