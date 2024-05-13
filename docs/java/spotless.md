@@ -14,7 +14,7 @@ dependencyResolutionManagement {
     versionCatalogs {
         libs {
             // https://plugins.gradle.org/plugin/com.diffplug.spotless
-            plugin("spotless", "com.diffplug.spotless").version("6.17.0")
+            plugin("spotless", "com.diffplug.spotless").version("6.25.0")
         }
     }
 }
@@ -127,7 +127,7 @@ spotless {
         toggleOffOn('@formatter:off', '@formatter:on')
         importOrder()
         removeUnusedImports()
-        googleJavaFormat('1.17.0').aosp().reflowLongStrings()
+        googleJavaFormat('1.22.0').aosp().reflowLongStrings()
         formatAnnotations()
     }
 }
