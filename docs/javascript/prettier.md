@@ -6,7 +6,11 @@
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev prettier prettier-plugin-organize-imports prettier-plugin-packagejson prettier-plugin-tailwindcss eslint-config-alloy
+npm install --save-dev prettier eslint-config-alloy
+```
+
+```bash npm2yarn
+npm install --save-dev prettier-plugin-organize-imports prettier-plugin-packagejson prettier-plugin-tailwindcss
 ```
 
 ```bash
