@@ -24,10 +24,13 @@ npm pkg set scripts.prettier:fix="prettier -write --ignore-unknown src"
 import alloy from 'eslint-config-alloy/.prettierrc.js';
 
 /** @type {import("prettier").Config} */
-export default {
+const config = {
   ...alloy,
   plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson', 'prettier-plugin-tailwindcss'],
 };
+
+export default config;
+
 ```
 
 创建 ignore 文件
