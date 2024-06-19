@@ -5,11 +5,15 @@
 ## 安装
 
 ```shell npm2yarn
-npm install -D vitest
+npm install -D vitest @vitest/ui
 ```
 
 ```shell npm2yarn
 npm install -D @testing-library/jest-dom @testing-library/react @testing-library/user-event jsdom
+```
+
+```shell
+npm pkg set scripts.test="vitest --ui"
 ```
 
 ## 配置
@@ -28,19 +32,21 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: './src/setupTests.ts',
+    setupFiles: './setupTests.ts',
     css: true,
   },
   // highlight-end
 });
 ```
 
-```javascript title="src/setupTests.ts"
-// jest-dom adds custom jest matchers for asserting on DOM nodes.
-// allows you to do things like:
-// expect(element).toHaveTextContent(/react/i)
-// learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom';
+```javascript title="vitest.setup.ts"
+import '@testing-library/jest-dom/vitest';
+import { cleanup } from '@testing-library/react';
+import { afterEach } from 'vitest';
+
+afterEach(() => {
+  cleanup();
+});
 ```
 
 ## Test
