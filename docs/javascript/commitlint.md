@@ -1,4 +1,6 @@
-# commitlint
+---
+title: commitlint
+---
 
 - [commitlint homepage](https://commitlint.js.org/)
 

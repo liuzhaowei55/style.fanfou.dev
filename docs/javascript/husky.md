@@ -1,8 +1,6 @@
 ---
-description: husky
+title: husky
 ---
-
-# husky
 
 - [typicode/husky](https://github.com/typicode/husky)
 - [husky docs](https://typicode.github.io/husky)
@@ -10,7 +8,7 @@ description: husky
 ## 安装
 
 ```bash npm2yarn
-npm install --save-dev husky
+npm install husky --save-dev
 ```
 
 ## 初始化

@@ -1,9 +1,3 @@
-# Husky
+import Husky from '../../javascript/husky.md'
 
-```bash npm2yarn
-npm install --save-dev husky
-```
-
-```bash
-npm pkg set scripts.prepare="husky" && npm run prepare
-```
+<Husky />
