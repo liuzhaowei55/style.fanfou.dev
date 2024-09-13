@@ -1,4 +1,6 @@
-# Lint - @biomejs/biome
+---
+title: Lint - @biomejs/biome
+---
 
 - [github.com/biomejs/biome](https://github.com/biomejs/biome)
 - [biomejs.dev/guides](https://biomejs.dev/guides/getting-started/)
@@ -15,7 +17,7 @@ npm install --save-dev --save-exact @biomejs/biome
 
 ```json title="biome.json"
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
   "organizeImports": {
     "enabled": true
   },
