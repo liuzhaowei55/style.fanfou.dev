@@ -28,3 +28,13 @@ echo "npm test" > .husky/pre-commit
 ```shell
 git add .husky/pre-commit
 ```
+
+## 完全卸载
+
+```shell
+npm uninstall husky
+
+rm -rf .husky
+
+git config --unset core.hooksPath
+```
