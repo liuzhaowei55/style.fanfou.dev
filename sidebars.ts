@@ -31,6 +31,7 @@ const sidebars: SidebarsConfig = {
         'javascript/prettier',
         'javascript/eslint',
         'javascript/stylelint',
+        'javascript/lefthook',
       ],
     },
     {

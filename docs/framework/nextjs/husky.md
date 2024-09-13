@@ -5,5 +5,5 @@ npm install --save-dev husky
 ```
 
 ```bash
-npm pkg set scripts.prepare="husky install" && npm run prepare
+npm pkg set scripts.prepare="husky" && npm run prepare
 ```
