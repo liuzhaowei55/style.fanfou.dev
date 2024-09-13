@@ -51,6 +51,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Vite + React + TypeScript',
       items: [
+        'framework/vite-react-ts/hooks-lefthook',
         'framework/vite-react-ts/lint-biomejs',
         'framework/vite-react-ts/testing-vitest',
         'framework/vite-react-ts/router-react-router',

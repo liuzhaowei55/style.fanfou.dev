@@ -1,9 +1,8 @@
 ---
+title: Lefthook
 tags:
   - 推荐
 ---
-
-# Lefthook
 
 - https://github.com/evilmartians/lefthook
 
