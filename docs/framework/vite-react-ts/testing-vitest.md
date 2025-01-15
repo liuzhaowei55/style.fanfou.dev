@@ -32,7 +32,7 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: './setupTests.ts',
+    setupFiles: './vitest.setup.ts',
     css: true,
   },
   // highlight-end
