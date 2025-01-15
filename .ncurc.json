@@ -2,5 +2,5 @@
   "$schema": "https://raw.githubusercontent.com/raineorshine/npm-check-updates/main/src/types/RunOptions.json",
   "upgrade": false,
   "install": "always",
-  "reject": ["eslint"]
+  "reject": ["eslint", "react", "react-dom", "@types/react", "@types/react-dom"]
 }
