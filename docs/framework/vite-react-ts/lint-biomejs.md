@@ -46,6 +46,7 @@ npm install --save-dev --save-exact @biomejs/biome
 
 配置 pkg.scripts 命令
 
-```shell npm2yarn
-npm pkg set scripts.lint="biome check --write --unsafe"
+```bash
+npm pkg set scripts.lint="biome check"
+npm pkg set scripts.lint:fix="biome check --write --unsafe"
 ```

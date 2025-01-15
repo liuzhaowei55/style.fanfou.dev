@@ -66,8 +66,7 @@ const sidebars: SidebarsConfig = {
       label: 'NextJS',
       items: [
         'framework/nextjs/index',
-        'framework/nextjs/eslint-9',
-        'framework/nextjs/prettier',
+        'framework/nextjs/biome',
         'framework/nextjs/stylelint',
         'framework/nextjs/husky',
         'framework/nextjs/lint-staged',
