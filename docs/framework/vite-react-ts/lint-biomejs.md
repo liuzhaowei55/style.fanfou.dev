@@ -17,9 +17,10 @@ npm install --save-dev --save-exact @biomejs/biome
 
 ```json title="biome.json"
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "include": ["src", "package.json", "biome.json"],
+    "ignore": []
   },
   "formatter": {
     "enabled": true,
@@ -31,6 +32,14 @@ npm install --save-dev --save-exact @biomejs/biome
     "rules": {
       "recommended": true
     }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    }
   }
 }
 ```
@@ -38,5 +47,5 @@ npm install --save-dev --save-exact @biomejs/biome
 配置 pkg.scripts 命令
 
 ```shell npm2yarn
-npm pkg set scripts.lint="biome check --write src"
+npm pkg set scripts.lint="biome check --write --unsafe"
 ```
