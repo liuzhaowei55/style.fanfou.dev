@@ -30,6 +30,7 @@ const sidebars: SidebarsConfig = {
         'javascript/commitlint',
         'javascript/prettier',
         'javascript/eslint',
+        'javascript/eslint-9',
         'javascript/stylelint',
         'javascript/lefthook',
       ],
@@ -65,7 +66,7 @@ const sidebars: SidebarsConfig = {
       label: 'NextJS',
       items: [
         'framework/nextjs/index',
-        'framework/nextjs/eslint',
+        'framework/nextjs/eslint-9',
         'framework/nextjs/prettier',
         'framework/nextjs/stylelint',
         'framework/nextjs/husky',
