@@ -18,25 +18,20 @@ npm pkg set scripts.test="vitest --ui"
 
 ## 配置
 
-```javascript title="vite.config.ts"
-// highlight-next-line
-/// <reference types="vitest" />
+```javascript title="vitest.config.ts"
+import { defineConfig, mergeConfig } from 'vitest/config';
+import viteConfig from './vite.config.ts';
 
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  // highlight-start
+const vitestConfig = defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: './vitest.setup.ts',
     css: true,
   },
-  // highlight-end
 });
+
+export default mergeConfig(viteConfig, vitestConfig);
 ```
 
 ```javascript title="vitest.setup.ts"
