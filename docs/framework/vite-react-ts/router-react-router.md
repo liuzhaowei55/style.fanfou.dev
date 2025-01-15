@@ -8,19 +8,32 @@
 ## 安装
 
 ```bash npm2yarn
-npm install react-router-dom
+npm install react-router
 ```
 
 ## 创建路由文件
 
-```javascript title="src/router.tsx"
-import { RouteObject, createBrowserRouter } from "react-router-dom";
+```javascript title="src/routes.tsx"
+import type { RouteObject } from "react-router";
+import Fallback from "./fallback";
 
-const routes: RouteObject[] = [{ path: "/", lazy: () => import("./App") }];
-
-const router = createBrowserRouter(routes);
-
-export default router;
+export const routes: RouteObject[] = [
+  {
+    path: "/",
+    HydrateFallback: Fallback,
+    children: [
+      {
+        index: true,
+        lazy: () => import("./App"),
+      },
+    ],
+  },
+  {
+    path: "*",
+    HydrateFallback: Fallback,
+    element: <>404</>,
+  },
+];
 
 ```
 
@@ -48,37 +61,11 @@ export default function Fallback() {
 React Router 使用 lazy loading 来实现路由懒加载，因此页面文件需要导出名为 `Component` 的组件。详细说明见[官网文档](https://reactrouter.com/en/main/route/lazy#lazy)
 
 ```javascript title="src/App.tsx"
-import { useState } from "react";
 import type { FC } from "react";
 
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-
-import "./App.css";
-
+// 所有组件导出须以 Component 作为名称
 export const Component: FC = () => {
-  const [count, setCount] = useState(0);
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
-    </>
-  );
+  return <>App Page.</>;
 };
 
 ```
@@ -88,21 +75,22 @@ export const Component: FC = () => {
 ```javascript title="src/main.tsx"
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
 
 // highlight-start
-import FallbackElement from "./fallback.tsx";
-import router from "./router.ts";
+import { RouterProvider, createBrowserRouter } from "react-router";
+import { routes } from "./routes.tsx";
 // highlight-end
+
+const router = createBrowserRouter(routes);
 
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     // highlight-start
-    <RouterProvider router={router} fallbackElement={<FallbackElement />} />
+    <RouterProvider router={router} />
     // highlight-end
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 ```
