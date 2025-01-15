@@ -51,7 +51,7 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       label: 'Vite + React + TypeScript',
       items: [
-        'framework/vite-react-ts/tsconfg-paths',
+        'framework/vite-react-ts/tsconfig-paths',
         'framework/vite-react-ts/git-lefthook',
         'framework/vite-react-ts/git-commitlint',
         'framework/vite-react-ts/lint-biomejs',
