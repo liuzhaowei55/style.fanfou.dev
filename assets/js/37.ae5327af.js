@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkstyle_fanfou_dev||=[]).push([[37],{37(a,e,s){s.r(e),s.d(e,{DocSearchModal:()=>c.a1});var c=s(9801)}}]);
