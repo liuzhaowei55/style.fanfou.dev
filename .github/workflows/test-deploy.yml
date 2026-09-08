@@ -12,15 +12,12 @@ jobs:
     name: Test deployment
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-      - uses: actions/setup-node@v7
+      - uses: pnpm/setup@v2
         with:
-          node-version-file: package.json
-          package-manager-cache: false
-      - uses: pnpm/action-setup@v6
-        with:
-          run_install: true
+          cache: false
+          install: true
       - name: Test build website
         run: pnpm run build
