@@ -58,7 +58,7 @@
     "prettier": "3.9.6",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier-plugin-packagejson": "3.0.2",
-    "typescript": "5.7.3"
+    "typescript": "7"
   },
   "packageManager": "pnpm@12.3.4",
   "engines": {

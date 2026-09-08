@@ -56,7 +56,6 @@ const config: Config = {
   url: 'https://style.fanfou.dev',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
@@ -72,6 +71,13 @@ const config: Config = {
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
+  },
+
+  markdown: {
+    mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
   presets: [
