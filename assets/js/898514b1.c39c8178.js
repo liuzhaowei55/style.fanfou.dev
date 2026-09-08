@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkstyle_fanfou_dev||=[]).push([[9067],{9187(s){s.exports=JSON.parse('{"tags":[{"label":"\u63a8\u8350","permalink":"/docs/tags/\u63a8\u8350","count":1}]}')}}]);

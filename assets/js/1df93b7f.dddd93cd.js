@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkstyle_fanfou_dev||=[]).push([[4583],{169(s,t,a){a.r(t);var d=a(1686),e=(a(1763),a(1987));const o=()=>(0,e.jsx)(d.rd,{to:"/docs"});a.d(t,["default",0,o])}}]);
