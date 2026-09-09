@@ -33,6 +33,7 @@ const sidebars: SidebarsConfig = {
         'javascript/eslint-9',
         'javascript/stylelint',
         'javascript/lefthook',
+        'javascript/oxc',
       ],
     },
     {
